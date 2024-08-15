@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            font-family: poppins;
+        }
+        .auth{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(assets/bgimg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            border-radius: 10px 20px 30px 34px;
+            width: 700px;
+            height: 600px;
+            border : 2px solid white;
+        }
+        .form input{
+            width: auto;
+            height: 22px;
+            padding: 20px 30px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 10px;
+            width: 80%;
+            text-align: center;
+
+        }
+
+
+        .form p{
+            text-align: center;
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .form button{
+            font-size: 20px;
+            border: none;
+            padding: 3px 10px;
+            margin: 0px;
+            background-color: rgb(193, 234, 167);
+            border-radius: 15px 17px 28px 19px;
+            color: rgb(24, 149, 32);
+        }
+
+        .form button:hover{
+            background-color: rgb(255, 255, 255);
+            color: rgb(24, 149, 32);
+            transition-duration: 100ms;
+            transition: 200ms ease-in;
+            border-radius: 10px 15px 20px 25px;
+            padding: 3px 10px;
+        }
+
+        #ckbx{
+            display: flex;
+            padding-top: 10px;
+            width: 80%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-top: 5px;
+        }
+
+        #ckbx input{
+            border: none;
+            border-radius: 40px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section class="auth">
+        <div class="form">
+            <img src="assets/logo.png" alt="" style="width: 200px">
+            <p style="font-size: 30px;"><b> Create your account </b> </p>
+            <p>Enter Email</p><input type="text" id="Email" required>
+            <p>Create password</p><input type="password" id="password" required>
+            <p>Confirm password</p><input type="password" id="confirmPassword" required>        
+            <div id="ckbx"><input type="checkbox" id="showPassword"> Show password</div>
+            <p id="error-message" style="color: red; font-size: small;"></p>
+            <button style="cursor: pointer;" id="submitBtn">Submit</button>
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
